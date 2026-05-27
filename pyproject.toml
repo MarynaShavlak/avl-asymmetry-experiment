@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avl-asymmetry"
+version = "0.1.0"
+description = "Empirical study of insert vs delete rotation asymmetry in AVL trees"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Serhii" }
+]
+keywords = ["avl", "balanced-tree", "data-structures", "algorithms"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "matplotlib>=3.5",
+    "numpy>=1.22",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["avl_asymmetry*"]
+exclude = ["tests*", "experiments*", "notebooks*"]
