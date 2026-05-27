@@ -49,7 +49,8 @@ avl-asymmetry-experiment/
 ## Встановлення і запуск
 
 ```bash
-git clone https://github.com/<ваш-юзер>/avl-asymmetry-experiment.git
+git clone https://github.com/MarynaShavlak/avl-asymmetry-experiment.git
+
 cd avl-asymmetry-experiment
 
 python -m venv .venv
